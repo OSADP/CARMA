@@ -47,27 +47,27 @@ Library {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1135.0, 588.0]
-	ZoomFactor		[1.25]
-	Offset			[0.0, 8.6000000000000227]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"145"
+	Extents			[1132.0, 568.0]
+	ZoomFactor		[0.8]
+	Offset			[370.9322930003209, 1234.166666666667]
       }
     }
   }
-  DSRTSU_INTERNAL_RTI_VER "440"
+  DSRTSU_INTERNAL_RTI_VER "450"
   DSRTSU_INTERNAL_RTI_TYPE "rti1401"
   DSRTSU_INTERNAL_DSETHERNETUDP	"10"
-  DSRTSU_INTERNAL_RTIFPGA "30"
+  DSRTSU_INTERNAL_RTIFPGA "40"
   Created		  "Tue Jul 28 16:55:49 2015"
   Creator		  "leidos"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "Admin"
+  LastModifiedBy	  "rushk1"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Sep 09 11:09:30 2015"
-  RTWModifiedTimeStamp	  363697764
-  ModelVersionFormat	  "1.%<AutoIncrement:82>"
+  LastModifiedDate	  "Fri Dec 11 16:24:40 2015"
+  RTWModifiedTimeStamp	  371751876
+  ModelVersionFormat	  "1.%<AutoIncrement:83>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -755,7 +755,7 @@ Library {
 		PropName		"Components"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
 		EnumStrPairs {
 		  Value			  0
 		  String		  "RUN"
@@ -768,7 +768,7 @@ Library {
 		Value			"RUN"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
 		EnumStrPairs {
 		  Value			  0
 		  String		  "real-time"
@@ -796,7 +796,7 @@ Library {
 		Value			"OPTION_DISABLED"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
 		EnumStrPairs {
 		  Value			  0
 		  String		  "OFF"
@@ -819,7 +819,7 @@ Library {
 		Value			"ON"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
 		"zationOptsPopup_"
 		EnumStrPairs {
 		  Value			  0
@@ -873,7 +873,7 @@ Library {
 		Value			"ON"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
 		"onPopup"
 		EnumStrPairs {
 		  Value			  0
@@ -922,11 +922,6 @@ Library {
 	      CustomProperty {
 		DataType		"slbool"
 		Name			"TRCGenerateDerivatives"
-		Value			off
-	      }
-	      CustomProperty {
-		DataType		"slbool"
-		Name			"TRCApplySubsystemPermissions"
 		Value			off
 	      }
 	      CustomProperty {
@@ -1118,13 +1113,6 @@ Library {
       OutPortSampleTime	      "-1"
     }
     Block {
-      BlockType		      Selector
-      NumberOfDimensions      "1"
-      IndexMode		      "One-based"
-      InputPortWidth	      "-1"
-      SampleTime	      "-1"
-    }
-    Block {
       BlockType		      SubSystem
       ShowPortLabels	      "FromPortIcon"
       Permissions	      "ReadWrite"
@@ -1189,7 +1177,7 @@ Library {
   System {
     Name		    "carma_platform"
     Location		    [-8, 0, 1370, 754]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1247,7 +1235,7 @@ Library {
 	  Ports			  [2, 0, 1]
 	  Position		  [580, 280, 785, 355]
 	  ZOrder		  69
-	  LibraryVersion	  "1.6"
+	  LibraryVersion	  "1.7"
 	  SourceBlock		  "dsrc_handler/DSRC Adapter"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -1268,7 +1256,7 @@ Library {
 	  Ports			  [1]
 	  Position		  [600, 170, 760, 240]
 	  ZOrder		  64
-	  LibraryVersion	  "1.54"
+	  LibraryVersion	  "1.57"
 	  SourceBlock		  "topr5_adapter/Pinpoint Adapter"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -1280,7 +1268,7 @@ Library {
 	  Ports			  [1]
 	  Position		  [600, 494, 760, 556]
 	  ZOrder		  54
-	  LibraryVersion	  "1.54"
+	  LibraryVersion	  "1.57"
 	  SourceBlock		  "topr5_adapter/SRX Command Bus Adapter"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -1292,7 +1280,7 @@ Library {
 	  Ports			  [0, 1]
 	  Position		  [130, 495, 300, 555]
 	  ZOrder		  51
-	  LibraryVersion	  "1.162"
+	  LibraryVersion	  "1.165"
 	  SourceBlock		  "srx_platform/SRX Command Bus RX Handler"
 	  SourceType		  ""
 	  ShowPortLabels	  "FromPortIcon"
@@ -1308,7 +1296,7 @@ Library {
 	  Ports			  [0, 3]
 	  Position		  [125, 286, 300, 344]
 	  ZOrder		  55
-	  LibraryVersion	  "1.162"
+	  LibraryVersion	  "1.165"
 	  SourceBlock		  "srx_platform/SRX DSRC RX Handler"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -1320,7 +1308,7 @@ Library {
 	  Ports			  [1]
 	  Position		  [600, 389, 760, 461]
 	  ZOrder		  53
-	  LibraryVersion	  "1.54"
+	  LibraryVersion	  "1.57"
 	  SourceBlock		  "topr5_adapter/SRX High-Speed Adapter"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -1332,7 +1320,7 @@ Library {
 	  Ports			  [0, 1]
 	  Position		  [130, 396, 300, 454]
 	  ZOrder		  50
-	  LibraryVersion	  "1.162"
+	  LibraryVersion	  "1.165"
 	  SourceBlock		  "srx_platform/SRX High-Speed Bus Rx Handler"
 	  SourceType		  ""
 	  ShowPortLabels	  "FromPortIcon"
@@ -1348,7 +1336,7 @@ Library {
 	  Ports			  [2]
 	  Position		  [600, 596, 765, 654]
 	  ZOrder		  67
-	  LibraryVersion	  "1.54"
+	  LibraryVersion	  "1.57"
 	  SourceBlock		  "topr5_adapter/SRX Object Bus Adapter"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -1360,7 +1348,7 @@ Library {
 	  Ports			  [0, 2]
 	  Position		  [130, 595, 300, 655]
 	  ZOrder		  57
-	  LibraryVersion	  "1.162"
+	  LibraryVersion	  "1.165"
 	  SourceBlock		  "srx_platform/SRX Object Bus RX Handler"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -1372,7 +1360,7 @@ Library {
 	  Ports			  [0, 1]
 	  Position		  [125, 176, 300, 234]
 	  ZOrder		  44
-	  LibraryVersion	  "1.162"
+	  LibraryVersion	  "1.165"
 	  SourceBlock		  "srx_platform/SRX Pinpoint RX Handler"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -1384,7 +1372,7 @@ Library {
 	  Ports			  []
 	  Position		  [130, 78, 300, 138]
 	  ZOrder		  26
-	  LibraryVersion	  "1.162"
+	  LibraryVersion	  "1.165"
 	  SourceBlock		  "srx_platform/SRX Platform Initializer"
 	  SourceType		  "SRX Platform Initializer"
 	  ContentPreviewEnabled	  off
@@ -1666,7 +1654,7 @@ Library {
 	  Ports			  [5, 1]
 	  Position		  [365, 294, 610, 396]
 	  ZOrder		  45
-	  LibraryVersion	  "1.162"
+	  LibraryVersion	  "1.165"
 	  SourceBlock		  "srx_platform/SRX Accel Command"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -1872,7 +1860,7 @@ Library {
 	  Ports			  [0, 1]
 	  Position		  [210, 28, 320, 72]
 	  ZOrder		  101
-	  LibraryVersion	  "1.42"
+	  LibraryVersion	  "1.43"
 	  SourceBlock		  "rtitttasklib/Time-Triggered Task"
 	  SourceType		  "RTI Time-Triggered Task"
 	  ContentPreviewEnabled	  off
@@ -1955,7 +1943,7 @@ Library {
 	      Ports		      [1]
 	      Position		      [370, 33, 570, 77]
 	      ZOrder		      100
-	      LibraryVersion	      "1.42"
+	      LibraryVersion	      "1.43"
 	      SourceBlock	      "rtitttasklib/Time-Trigger Set"
 	      SourceType	      "RTI Time-Trigger Set"
 	      ContentPreviewEnabled   off
@@ -2111,7 +2099,7 @@ Library {
       }
       System {
 	Name			"UDP Logger / HMI"
-	Location		[-8, -8, 1374, 746]
+	Location		[-8, 0, 1370, 754]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -2162,7 +2150,7 @@ Library {
 	  BlockType		  SubSystem
 	  Name			  "Subsystem"
 	  SID			  "145"
-	  Ports			  [2, 2, 0, 1]
+	  Ports			  [2, 1, 0, 1]
 	  Position		  [300, 174, 525, 241]
 	  ZOrder		  94
 	  MinAlgLoopOccurrences	  off
@@ -2174,8 +2162,8 @@ Library {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "Subsystem"
-	    Location		    [-8, -8, 1374, 746]
-	    Open		    off
+	    Location		    [-8, 0, 1370, 754]
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2186,7 +2174,7 @@ Library {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "30"
+	    ZoomFactor		    "80"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "In1"
@@ -2712,48 +2700,6 @@ Library {
 	      Position		      [615, 55, 645, 85]
 	      ZOrder		      99
 	      Value		      "Value"
-	    }
-	    Block {
-	      BlockType		      Constant
-	      Name		      "Constant3"
-	      SID		      "322"
-	      Position		      [530, 1785, 605, 1815]
-	      ZOrder		      404
-	      Value		      "[12 68]"
-	    }
-	    Block {
-	      BlockType		      Constant
-	      Name		      "Constant4"
-	      SID		      "323"
-	      Position		      [1120, 1800, 1150, 1830]
-	      ZOrder		      407
-	      Value		      "2"
-	      OutDataTypeStr	      "int32"
-	    }
-	    Block {
-	      BlockType		      Constant
-	      Name		      "Constant5"
-	      SID		      "324"
-	      Position		      [1120, 1860, 1150, 1890]
-	      ZOrder		      408
-	      OutDataTypeStr	      "boolean"
-	    }
-	    Block {
-	      BlockType		      Reference
-	      Name		      "DSEncode1"
-	      SID		      "325"
-	      Ports		      [1, 1]
-	      Position		      [910, 1758, 1010, 1802]
-	      ZOrder		      405
-	      LibraryVersion	      "1.7"
-	      SourceBlock	      "parse_utils/DSEncode32"
-	      SourceType	      "DSEncode32"
-	      byteordering	      "little endian (Intel)"
-	      offset		      "[ 0 ] "
-	      auto_offset	      on
-	      datatype		      "[3 3]"
-	      one_datatype	      off
-	      sampletime	      "-1"
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -3649,47 +3595,6 @@ Library {
 	      "et','XXX.XXX.XXX.XXX:5000')"
 	    }
 	    Block {
-	      BlockType		      Reference
-	      Name		      "ETHERNET_UDP_TX_BL2"
-	      SID		      "326"
-	      Ports		      [3, 1]
-	      Position		      [1365, 1765, 1630, 1865]
-	      ZOrder		      406
-	      LibraryVersion	      "1.142"
-	      SourceBlock	      "rtiethernetudplib/ETHERNET_UDP_TX_BL1"
-	      SourceType	      "RTI"
-	      ContentPreviewEnabled   off
-	      InterfaceName	      "rti_ethernet_interface_name"
-	      BoardType		      "ETH Type 1"
-	      ModuleNo		      "1"
-	      ChannelNo		      "1"
-	      SocketNo		      "4"
-	      MaxMessageSize	      "2"
-	      SendTimeout	      "0.0005"
-	      LocalSocket	      "192.168.88.21:5003"
-	      RemoteSocket	      "192.168.88.10:5003"
-	      DSProperties	      "struct('RTI',struct('Version',uint32(2),'BlockType',struct('isSLSource',uint8(1),'isSLSink'"
-	      ",uint8(1),'isHWSource',uint8(1),'isHWSink',uint8(1),'isSetup',uint8(0),'isInline',uint8(1),'isNonInline',uint8("
-	      "1),'isInterrupt',uint8(0),'isChannelwise',uint8(1)),'IOBoardType','DSETHERNETUDP','UnitType','ETHUDP','Identifi"
-	      "er','TX','DialogType','SL','BlockSet','RTIETHERNETUDP','SlaveProcessor','NONE'))"
-	      RTIBlockInterface	      "struct('OutputPortsWidth',int32(1),'OutputPortsActive',1,'OutputPortsName',{{'Status'}"
-	      "},'OutputPortsDataType',{{'SS_UINT16'}},'InputPortsWidth',int32([1 1 1]),'InputPortsActive',[1 1 1],'InputPorts"
-	      "Name',{{'Data',['Message Size'],'Enable'}},'InputPortsDataType',{{'SS_UINT32','SS_INT32','SS_BOOLEAN'}},'BlockD"
-	      "isplay',{{['Ethernet UDP Transmit\\nBoard Type: ETH Type 1\\nModule: 1\\nSocket: 4\\nMaximum Message Size: 2'],"
-	      "'center'}},'IconTransparency','on','InitLevel',3,'BlockName',struct('Token',{{'ETHERNET_UDP_TX_BL1'}}),'MaskDes"
-	      "cription',['To send messages via the Ethernet UDP interface.'])"
-	      RTIBlockParameters      "struct('InterfaceName',{{'rti_ethernet_interface_name','OFF',[]}},'BoardType',{{1,'OFF"
-	      "',[]}},'ModuleNo',{{1,'OFF',[1 16]}},'ChannelNo',{{1,'OFF',[1 2]}},'SocketNo',{{4,'OFF',[1 4]}},'MaxMessageSize"
-	      "',{{2,'ON',[1 1472]}},'SendTimeout',{{0.0005,'ON',[1e-05 2]}},'LocalSocket',{{'192.168.88.21:5003','OFF',[]}},'"
-	      "RemoteSocket',{{'192.168.88.10:5003','OFF',[]}})"
-	      RTISFcnParameters	      "struct('InterfaceName','char','BoardType','double','ModuleNo','double','ChannelNo','do"
-	      "uble','SocketNo','double','MaxMessageSize','double','SendTimeout','double','LocalSocket','char','RemoteSocket',"
-	      "'char')"
-	      RTIBlockParaDefault     "struct('InterfaceName','rti_ethernet_interface_name','BoardType',1,'ModuleNo',1,'Chann"
-	      "elNo',1,'SocketNo',1,'MaxMessageSize',625,'SendTimeout',0.0005,'LocalSocket','XXX.XXX.XXX.XXX:5000','RemoteSock"
-	      "et','XXX.XXX.XXX.XXX:5000')"
-	    }
-	    Block {
 	      BlockType		      Mux
 	      Name		      "Mux"
 	      SID		      "226"
@@ -3701,25 +3606,13 @@ Library {
 	      DisplayOption	      "bar"
 	    }
 	    Block {
-	      BlockType		      Selector
-	      Name		      "Selector"
-	      SID		      "321"
-	      Ports		      [2, 1]
-	      Position		      [705, 1741, 820, 1819]
-	      ZOrder		      403
-	      IndexMode		      "Zero-based"
-	      IndexOptions	      "Index vector (port)"
-	      Indices		      "[1 3]"
-	      OutputSizes	      "1"
-	    }
-	    Block {
 	      BlockType		      Reference
 	      Name		      "test trigger set"
 	      SID		      "228"
 	      Ports		      [1]
 	      Position		      [680, 48, 880, 92]
 	      ZOrder		      98
-	      LibraryVersion	      "1.42"
+	      LibraryVersion	      "1.43"
 	      SourceBlock	      "rtitttasklib/Time-Trigger Set"
 	      SourceType	      "RTI Time-Trigger Set"
 	      ContentPreviewEnabled   off
@@ -3750,15 +3643,6 @@ Library {
 	      SID		      "313"
 	      Position		      [1480, 903, 1510, 917]
 	      ZOrder		      400
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "HMI Status"
-	      SID		      "327"
-	      Position		      [1680, 1808, 1710, 1822]
-	      ZOrder		      409
-	      Port		      "2"
 	      IconDisplay	      "Port number"
 	    }
 	    Line {
@@ -4966,19 +4850,9 @@ Library {
 	      ZOrder		      154
 	      SrcBlock		      "PATH Control Data"
 	      SrcPort		      1
-	      Points		      [25, 0]
-	      Branch {
-		ZOrder			155
-		Points			[0, 95]
-		DstBlock		"Selector"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			156
-		Points			[0, -20]
-		DstBlock		"Mux"
-		DstPort			76
-	      }
+	      Points		      [25, 0; 0, -20]
+	      DstBlock		      "Mux"
+	      DstPort		      76
 	    }
 	    Line {
 	      Name		      "<rx_timestamp_s>"
@@ -5013,49 +4887,6 @@ Library {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      161
-	      SrcBlock		      "Constant3"
-	      SrcPort		      1
-	      DstBlock		      "Selector"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      162
-	      SrcBlock		      "DSEncode1"
-	      SrcPort		      1
-	      DstBlock		      "ETHERNET_UDP_TX_BL2"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      163
-	      SrcBlock		      "Constant4"
-	      SrcPort		      1
-	      DstBlock		      "ETHERNET_UDP_TX_BL2"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      164
-	      SrcBlock		      "Constant5"
-	      SrcPort		      1
-	      Points		      [132, 0; 0, -25]
-	      DstBlock		      "ETHERNET_UDP_TX_BL2"
-	      DstPort		      3
-	    }
-	    Line {
-	      ZOrder		      165
-	      SrcBlock		      "ETHERNET_UDP_TX_BL2"
-	      SrcPort		      1
-	      DstBlock		      "HMI Status"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      166
-	      SrcBlock		      "Selector"
-	      SrcPort		      1
-	      DstBlock		      "DSEncode1"
-	      DstPort		      1
-	    }
-	    Line {
 	      Name		      "<value>"
 	      ZOrder		      172
 	      Labels		      [0, 0]
@@ -5072,16 +4903,6 @@ Library {
 	      SrcPort		      70
 	      DstBlock		      "Data Type Conversion64"
 	      DstPort		      1
-	    }
-	    Annotation {
-	      SID		      "320"
-	      Name		      "Send out the acc_cacc_state flag and \nmax_braking_exceeded flags to the HMI port"
-	      Position		      [662, 1684, 859, 1712]
-	      AutoSize		      on
-	      WordWrap		      off
-	      HorizontalAlignment     "left"
-	      VerticalAlignment	      "top"
-	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "310"
@@ -5102,7 +4923,7 @@ Library {
 	  Ports			  [0, 1]
 	  Position		  [85, 23, 195, 67]
 	  ZOrder		  96
-	  LibraryVersion	  "1.42"
+	  LibraryVersion	  "1.43"
 	  SourceBlock		  "rtitttasklib/Time-Triggered Task"
 	  SourceType		  "RTI Time-Triggered Task"
 	  ContentPreviewEnabled	  off
@@ -5180,13 +5001,13 @@ Library {
 	  ZOrder		  6
 	  SrcBlock		  "Subsystem"
 	  SrcPort		  1
+	  Points		  [20, 0; 0, -20]
 	  DstBlock		  "Logging Send Status"
 	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  7
-	  SrcBlock		  "Subsystem"
-	  SrcPort		  2
+	  Points		  [525, 225; 5, 0]
 	  DstBlock		  "HMI Send Status"
 	  DstPort		  1
 	}

@@ -24,7 +24,7 @@ Library {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-8.0, 9.0, 1292.0, 776.0]
+      Location		      [-9.0, 0.0, 1938.0, 1050.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -47,26 +47,26 @@ Library {
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
 	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"321"
-	Extents			[1049.0, 610.0]
+	LoadSaveID		"299"
+	Extents			[1692.0, 864.0]
 	ZoomFactor		[1.0]
-	Offset			[-8.75, 0.0]
+	Offset			[0.0, 0.0]
       }
     }
   }
-  DSRTSU_INTERNAL_RTI_VER "440"
+  DSRTSU_INTERNAL_RTI_VER "450"
   DSRTSU_INTERNAL_RTI_TYPE "rti1401"
   DSRTSU_INTERNAL_DSETHERNETUDP	"10"
-  DSRTSU_INTERNAL_RTIFPGA "30"
+  DSRTSU_INTERNAL_RTIFPGA "40"
   Created		  "Thu Jul 30 12:44:37 2015"
   Creator		  "leidos"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "leidos"
+  LastModifiedBy	  "rushk1"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Aug 26 18:04:06 2015"
-  RTWModifiedTimeStamp	  362513043
-  ModelVersionFormat	  "1.%<AutoIncrement:54>"
+  LastModifiedDate	  "Tue Dec 08 11:32:14 2015"
+  RTWModifiedTimeStamp	  371474928
+  ModelVersionFormat	  "1.%<AutoIncrement:57>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -752,7 +752,7 @@ Library {
 		PropName		"Components"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
 		EnumStrPairs {
 		  Value			  0
 		  String		  "RUN"
@@ -765,7 +765,7 @@ Library {
 		Value			"RUN"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
 		EnumStrPairs {
 		  Value			  0
 		  String		  "real-time"
@@ -793,7 +793,7 @@ Library {
 		Value			"OPTION_DISABLED"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
 		EnumStrPairs {
 		  Value			  0
 		  String		  "OFF"
@@ -816,7 +816,7 @@ Library {
 		Value			"ON"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
 		"zationOptsPopup_"
 		EnumStrPairs {
 		  Value			  0
@@ -870,7 +870,7 @@ Library {
 		Value			"ON"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
 		"onPopup"
 		EnumStrPairs {
 		  Value			  0
@@ -919,11 +919,6 @@ Library {
 	      CustomProperty {
 		DataType		"slbool"
 		Name			"TRCGenerateDerivatives"
-		Value			off
-	      }
-	      CustomProperty {
-		DataType		"slbool"
-		Name			"TRCApplySubsystemPermissions"
 		Value			off
 	      }
 	      CustomProperty {
@@ -1287,7 +1282,7 @@ Library {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "333"
+    SIDHighWatermark	    "336"
     Block {
       BlockType		      SubSystem
       Name		      "Pinpoint Adapter"
@@ -5815,7 +5810,7 @@ Library {
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
-		SIDHighWatermark	"68"
+		SIDHighWatermark	"75"
 		Block {
 		  BlockType		  Inport
 		  Name			  "data"
@@ -7226,7 +7221,7 @@ Library {
       Ports		      [0, 1]
       Position		      [20, 145, 190, 205]
       ZOrder		      34
-      LibraryVersion	      "1.159"
+      LibraryVersion	      "1.162"
       SourceBlock	      "srx_platform/SRX Command Bus RX Handler"
       SourceType	      ""
       ShowPortLabels	      "FromPortIcon"
@@ -7656,7 +7651,7 @@ Library {
 	  Position		  [770, 528, 970, 572]
 	  ZOrder		  26
 	  NamePlacement		  "alternate"
-	  LibraryVersion	  "1.53"
+	  LibraryVersion	  "1.56"
 	  SourceBlock		  "topr5_adapter/SRX High-Speed Adapter/Enabled Subsystem"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -7669,7 +7664,7 @@ Library {
 	  Position		  [770, 658, 970, 702]
 	  ZOrder		  34
 	  NamePlacement		  "alternate"
-	  LibraryVersion	  "1.53"
+	  LibraryVersion	  "1.56"
 	  SourceBlock		  "topr5_adapter/SRX High-Speed Adapter/Enabled Subsystem"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -7719,7 +7714,7 @@ Library {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "139"
+	    SIDHighWatermark	    "163"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "fl_vel"
@@ -8343,7 +8338,7 @@ Library {
       Ports		      [0, 1]
       Position		      [20, 51, 190, 109]
       ZOrder		      35
-      LibraryVersion	      "1.159"
+      LibraryVersion	      "1.162"
       SourceBlock	      "srx_platform/SRX High-Speed Bus Rx Handler"
       SourceType	      ""
       ShowPortLabels	      "FromPortIcon"
@@ -8368,8 +8363,8 @@ Library {
       MaskHideContents	      off
       System {
 	Name			"SRX Object Bus Adapter"
-	Location		[-8, 9, 1284, 785]
-	Open			off
+	Location		[-9, 0, 1929, 1050]
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -8398,6 +8393,19 @@ Library {
 	  Port			  "2"
 	  IconDisplay		  "Port number"
 	  OutDataTypeStr	  "Bus: FusObjectTrackA"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  SID			  "335"
+	  Ports			  [2, 1]
+	  Position		  [655, 306, 660, 344]
+	  ZOrder		  18
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  OutDataTypeStr	  "Bus: DetailedObjectList"
+	  NonVirtualBus		  on
 	}
 	Block {
 	  BlockType		  BusSelector
@@ -8456,6 +8464,25 @@ Library {
 	  DataStoreElements	  "CarmaData.radar_status.value#CarmaData.radar_status.rx_timestamp_s"
 	}
 	Block {
+	  BlockType		  DataStoreWrite
+	  Name			  "Data Store\nWrite1"
+	  SID			  "334"
+	  Ports			  [1]
+	  Position		  [680, 307, 830, 343]
+	  ZOrder		  17
+	  DataStoreName		  "GlobalDetailedObjectList"
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion"
+	  SID			  "336"
+	  Position		  [540, 318, 615, 352]
+	  ZOrder		  19
+	  OutDataTypeStr	  "uint8"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
 	  BlockType		  SubSystem
 	  Name			  "For Each\nSubsystem"
 	  SID			  "311"
@@ -8472,7 +8499,7 @@ Library {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "For Each\nSubsystem"
-	    Location		    [271, 337, 1563, 1139]
+	    Location		    [-9, -9, 1929, 1041]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -8660,8 +8687,8 @@ Library {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "Update Objects"
-	    Location		    [-8, 9, 1284, 785]
-	    Open		    on
+	    Location		    [-9, -9, 1929, 1041]
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8946,8 +8973,18 @@ Library {
 	  ZOrder		  80
 	  SrcBlock		  "SRX Object List"
 	  SrcPort		  1
-	  DstBlock		  "For Each\nSubsystem"
-	  DstPort		  1
+	  Points		  [117, 0]
+	  Branch {
+	    ZOrder		    129
+	    Points		    [0, 65]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    110
+	    DstBlock		    "For Each\nSubsystem"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  Name			  "<T_FusHeadRollingCount>"
@@ -8998,9 +9035,18 @@ Library {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nSelector"
 	  SrcPort		  6
-	  Points		  [31, 0; 0, 50]
-	  DstBlock		  "Update Objects"
-	  DstPort		  2
+	  Points		  [31, 0; 0, 50; 149, 0]
+	  Branch {
+	    ZOrder		    147
+	    DstBlock		    "Update Objects"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    133
+	    Points		    [0, 150]
+	    DstBlock		    "Data Type Conversion"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  91
@@ -9055,6 +9101,20 @@ Library {
 	  DstBlock		  "Data Store\nWrite"
 	  DstPort		  1
 	}
+	Line {
+	  ZOrder		  109
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "Data Store\nWrite1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  148
+	  SrcBlock		  "Data Type Conversion"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  2
+	}
       }
     }
     Block {
@@ -9064,7 +9124,7 @@ Library {
       Ports		      [0, 2]
       Position		      [25, 360, 195, 420]
       ZOrder		      38
-      LibraryVersion	      "1.159"
+      LibraryVersion	      "1.162"
       SourceBlock	      "srx_platform/SRX Object Bus RX Handler"
       SourceType	      "SubSystem"
       ContentPreviewEnabled   off
