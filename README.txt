@@ -1,11 +1,11 @@
 ﻿Open Source Overview
 ============================
 Connected Vehicle Research Platform (CVRP)
-Version 1.0
+Version 1.1
 
 Description
 -----------
-The CVRP software provides an API to each of the TFHRC's CARMA vehicles (modified 2013 Cadillac SRX).
+The CVRP (aka CARMA) software provides an API to each of the TFHRC's CARMA vehicles (modified 2013 Cadillac SRX).
 Researchers can build project-specific control code on top of this API to study, for example, advanced
 ACC and driver assist systems. The software in this repository comprises four components that execute on two processors.
 The primary processor is a MicroAutobox II running dSpace, that houses:
