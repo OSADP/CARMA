@@ -12,3 +12,6 @@ COR:  Randy VanGorder (FHWA TFHRC)
 Test facility management:  Jim Rugh and Martin Schy (Willow Grove NAS, Philadelphia, PA)
 Hardware integration and testing support:  Cary Vick, Ed Leslie (Leidos)
 Travel and Logistics Coordination: Margaret Hailemariam, Ayeshah Abuelhiga, Samantha Adam of Leidos
+
+Updates for version 1.1 were performed by Kyle Rush of Leidos.
+

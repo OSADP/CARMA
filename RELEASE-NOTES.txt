@@ -1,0 +1,25 @@
+Identifier
+==========
+CARMA platform, version 1.1, released 03 Feb 2016
+
+
+What's New
+==========
+Minor enhancements to accommodate the Lane Change project.
+
+
+Change Details
+==============
+* Add functionality to access turn signal status from the CAN bus
+* Add ability to access detailed forward radar data for all objects in view
+* Unbind project-specific usage of UDP logging and HMI port. Now available for other uses.
+
+
+Known Issues
+============
+None.
+
+Installation Guide
+==================
+See the README.txt file.
+
