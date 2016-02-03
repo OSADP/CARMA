@@ -24,7 +24,7 @@ Library {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-244.0, 147.0, 1300.0, 820.0]
+      Location		      [-9.0, 0.0, 1938.0, 1050.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -46,27 +46,27 @@ Library {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1057.0, 654.0]
-	ZoomFactor		[0.6]
-	Offset			[-207.75000000000023, -250.25000000000011]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"23"
+	Extents			[1692.0, 864.0]
+	ZoomFactor		[2.5]
+	Offset			[85.308108108107092, 1931.4594594594605]
       }
     }
   }
-  DSRTSU_INTERNAL_RTI_VER "440"
+  DSRTSU_INTERNAL_RTI_VER "450"
   DSRTSU_INTERNAL_RTI_TYPE "rti1401"
   DSRTSU_INTERNAL_DSETHERNETUDP	"10"
-  DSRTSU_INTERNAL_RTIFPGA "30"
+  DSRTSU_INTERNAL_RTIFPGA "40"
   Created		  "Wed Jul 29 18:02:13 2015"
   Creator		  "leidos"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "leidos"
+  LastModifiedBy	  "rushk1"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Sep 01 18:11:42 2015"
-  RTWModifiedTimeStamp	  363031890
-  ModelVersionFormat	  "1.%<AutoIncrement:162>"
+  LastModifiedDate	  "Thu Dec 10 16:37:12 2015"
+  RTWModifiedTimeStamp	  371666231
+  ModelVersionFormat	  "1.%<AutoIncrement:165>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -752,7 +752,7 @@ Library {
 		PropName		"Components"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
 		EnumStrPairs {
 		  Value			  0
 		  String		  "RUN"
@@ -765,7 +765,7 @@ Library {
 		Value			"RUN"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
 		EnumStrPairs {
 		  Value			  0
 		  String		  "real-time"
@@ -793,7 +793,7 @@ Library {
 		Value			"OPTION_DISABLED"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
 		EnumStrPairs {
 		  Value			  0
 		  String		  "OFF"
@@ -816,7 +816,7 @@ Library {
 		Value			"ON"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
 		"zationOptsPopup_"
 		EnumStrPairs {
 		  Value			  0
@@ -870,7 +870,7 @@ Library {
 		Value			"ON"
 	      }
 	      CustomProperty {
-		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
 		"onPopup"
 		EnumStrPairs {
 		  Value			  0
@@ -919,11 +919,6 @@ Library {
 	      CustomProperty {
 		DataType		"slbool"
 		Name			"TRCGenerateDerivatives"
-		Value			off
-	      }
-	      CustomProperty {
-		DataType		"slbool"
-		Name			"TRCApplySubsystemPermissions"
 		Value			off
 	      }
 	      CustomProperty {
@@ -1027,6 +1022,22 @@ Library {
       PreserveConstantTs      off
     }
     Block {
+      BlockType		      DataStoreWrite
+      DataStoreName	      "A"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      EnablePort
       StatesWhenEnabling      "held"
       PropagateVarSize	      "Only when enabling"
@@ -1102,11 +1113,14 @@ Library {
       GeneratePreprocessorConditionals off
       ContentPreviewEnabled   off
     }
+    Block {
+      BlockType		      Terminator
+    }
   }
   System {
     Name		    "srx_platform"
-    Location		    [-244, 147, 1056, 967]
-    Open		    on
+    Location		    [-9, 0, 1929, 1050]
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1117,9 +1131,9 @@ Library {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "60"
+    ZoomFactor		    "113"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "649"
+    SIDHighWatermark	    "665"
     Block {
       BlockType		      SubSystem
       Name		      "Read VehicleID"
@@ -1156,7 +1170,7 @@ Library {
 	  Ports			  []
 	  Position		  [20, 21, 130, 59]
 	  ZOrder		  48
-	  LibraryVersion	  "1.61"
+	  LibraryVersion	  "1.62"
 	  SourceBlock		  "rtiflashlib/FLASH_SETUP"
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -1192,7 +1206,7 @@ Library {
 	  Ports			  [0, 2]
 	  Position		  [20, 110, 130, 165]
 	  ZOrder		  49
-	  LibraryVersion	  "1.61"
+	  LibraryVersion	  "1.62"
 	  SourceBlock		  "rtiflashlib/RESTORE_FROM_FLASH_BL1"
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -1345,7 +1359,7 @@ Library {
 	  Position		  [245, 65, 525, 225]
 	  ZOrder		  56
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nTransmit (TX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -1601,7 +1615,7 @@ Library {
 	  Position		  [280, 325, 435, 505]
 	  ZOrder		  71
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -1752,7 +1766,7 @@ Library {
 	  Position		  [280, 528, 440, 707]
 	  ZOrder		  72
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -2015,7 +2029,7 @@ Library {
 	  Position		  [280, 728, 445, 867]
 	  ZOrder		  73
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -2150,7 +2164,7 @@ Library {
 	  Position		  [280, 908, 440, 1047]
 	  ZOrder		  74
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -2285,7 +2299,7 @@ Library {
 	  Position		  [280, 1072, 440, 1188]
 	  ZOrder		  75
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -2404,7 +2418,7 @@ Library {
 	  Position		  [280, 174, 435, 286]
 	  ZOrder		  76
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -3367,8 +3381,8 @@ Library {
       }
       System {
 	Name			"SRX High-Speed Bus Rx Handler"
-	Location		[1, 1, 1279, 759]
-	Open			off
+	Location		[-9, 0, 1929, 1050]
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -3379,7 +3393,7 @@ Library {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"250"
 	Block {
 	  BlockType		  Reference
 	  Name			  "Adaptive_Cruise_Disp_Stat_HS"
@@ -3388,7 +3402,7 @@ Library {
 	  Position		  [55, 1354, 310, 1616]
 	  ZOrder		  64
 	  AttributesFormatString  "Group Id: RTICAN1\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -3583,7 +3597,7 @@ Library {
 	  Position		  [120, 906, 370, 1054]
 	  ZOrder		  65
 	  AttributesFormatString  "Group Id: RTICAN1\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -3779,7 +3793,7 @@ Library {
 	  Name			  "Bus\nCreator6"
 	  SID			  "292"
 	  Ports			  [3, 1]
-	  Position		  [490, 1861, 495, 1949]
+	  Position		  [620, 2086, 625, 2174]
 	  ZOrder		  76
 	  ShowName		  off
 	  Inputs		  "3"
@@ -3807,13 +3821,46 @@ Library {
 	  Name			  "Bus\nCreator8"
 	  SID			  "599"
 	  Ports			  [4, 1]
-	  Position		  [490, 1998, 495, 2112]
+	  Position		  [425, 2273, 430, 2387]
 	  ZOrder		  79
 	  ShowName		  off
 	  DisplayOption		  "bar"
 	  Port {
 	    PortNumber		    1
 	    Name		    "Engine General Status"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  DataStoreWrite
+	  Name			  "Data Store\nWrite"
+	  SID			  "650"
+	  Ports			  [1]
+	  Position		  [655, 1857, 905, 1913]
+	  ZOrder		  93
+	  DataStoreName		  "TurnSignalStore"
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion"
+	  SID			  "651"
+	  Position		  [550, 1868, 625, 1902]
+	  ZOrder		  94
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion1"
+	  SID			  "665"
+	  Position		  [365, 2128, 440, 2162]
+	  ZOrder		  95
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "BrkLtsAtv"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
@@ -3826,7 +3873,7 @@ Library {
 	  Position		  [115, 182, 355, 508]
 	  ZOrder		  62
 	  AttributesFormatString  "Group Id: RTICAN1\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -3960,10 +4007,10 @@ Library {
 	  Name			  "ETEI_Engine_General_Status"
 	  SID			  "598"
 	  Ports			  [0, 4]
-	  Position		  [120, 1999, 375, 2111]
+	  Position		  [55, 2274, 310, 2386]
 	  ZOrder		  78
 	  AttributesFormatString  "Group Id: RTICAN1\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -4055,13 +4102,13 @@ Library {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "Exterior_Lighting_HS"
-	  SID			  "50"
-	  Ports			  [0, 3]
-	  Position		  [120, 1858, 375, 1962]
-	  ZOrder		  68
+	  Name			  "Exterior_Lighting_HS_0x140"
+	  SID			  "652"
+	  Ports			  [0, 14]
+	  Position		  [130, 1842, 240, 2203]
+	  ZOrder		  80
 	  AttributesFormatString  "Group Id: RTICAN1\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -4083,33 +4130,49 @@ Library {
 	  "1),'isHWSource',uint8(0),'isHWSink',uint8(0),'isSetup',uint8(0),'isInline',uint8(1),'isNonInline',uint8(0),'isInter"
 	  "rupt',uint8(0),'isChannelwise',uint8(0)),'IOBoardType','RTICAN','UnitType','MESSAGE','Identifier','RX','DialogType'"
 	  ",'MSVC','BlockSet','RTICAN','SlaveProcessor','CAN'))"
-	  RTIBlockInterface	  "struct('OutputPortsWidth',int32([1 1 1]),'OutputPortsActive',[1 1 1],'OutputPortsName',{{'BrkL"
-	  "tsAtv',['RX status'],['RX time']}},'OutputPortsDataType',{{'SS_BOOLEAN','SS_DOUBLE','SS_DOUBLE'}},'OutputPortsLabel"
-	  "',{{'BrkLtsAtv','',''}},'OutputPortsLabelMode','ON','InputPortsWidth',int32(0),'InputPortsActive',0,'DialogFcn','rt"
-	  "ican_message_interface_gui','BlockDisplay',{{'','center'}},'IconTransparency','on','ParameterTunableNames',{{}},'In"
-	  "itLevel',3,'BlockName',struct('Token',{{'Exterior_Lighting_HS'}}),'SampleTime',{{-1}},'TriggerPort',{{'none'}},'Ena"
-	  "blePort',{{'none'}})"
+	  RTIBlockInterface	  "struct('OutputPortsWidth',int32([1 1 1 1 1 1 1 1 1 1 1 1 1 1]),'OutputPortsActive',[1 1 1 1 1 "
+	  "1 1 1 1 1 1 1 1 1],'OutputPortsName',{{'OtsdAmbtLtLvlStat','TrnSwAct','RrFogLmpsAct','HdlmpBmSelectStat','MainLghtS"
+	  "w','FrFogLmpsAct','LowBmAct','AutLghtCtrl','FlToPsSwAtv','BrkLtsAtv','HighBmAct',['RX status'],['RX time'],['RX del"
+	  "ta time']}},'OutputPortsDataType',{{'SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOU"
+	  "BLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE'}},'OutputPortsLabel',{{'Ot"
+	  "sdAmbtLtLvlStat','TrnSwAct','RrFogLmpsAct','HdlmpBmSelectStat','MainLghtSw','FrFogLmpsAct','LowBmAct','AutLghtCtrl'"
+	  ",'FlToPsSwAtv','BrkLtsAtv','HighBmAct','','',''}},'OutputPortsLabelMode','ON','InputPortsWidth',int32(0),'InputPort"
+	  "sActive',0,'DialogFcn','rtican_message_interface_gui','BlockDisplay',{{'','center'}},'IconTransparency','on','Param"
+	  "eterTunableNames',{{}},'InitLevel',3,'BlockName',struct('Token',{{'Exterior_Lighting_HS_0x140'}}),'SampleTime',{{-1"
+	  "}},'TriggerPort',{{'none'}},'EnablePort',{{'none'}})"
 	  RTIBlockParameters	  "struct('BoardTypeNo',{{1,'OFF',[]}},'BoardNo',{{1,'ON',[1 16]}},'ChannelNo',{{1,'ON',[1 2]}},"
-	  "'Parameters',{{struct('DataFileSupport',struct('DataFileSelectedMaster',1,'DataFileSelectedLocal',1,'DataFileName',"
-	  "'c:\\users\\leidos\\development\\carmaplatform\\microautobox\\src\\data_files\\srx_high_speed.dbc|','DataFileDate',"
-	  "{{{['12-Aug-2015 17:10:44']}}},'SelectedFile','..\\data_files\\srx_high_speed.dbc'),'Options',struct('StatusSelecte"
-	  "d',1,'TimeSelected',1,'DeltaTimeSelected',0,'BytePortSelected',0,'MessageLengthSelected',0,'TriggerPort',struct('Se"
+	  "'Parameters',{{struct('DataFileSupport',struct('DataFileSelectedMaster',0,'DataFileSelectedLocal',0,'DataFileName',"
+	  "['<no datafile support>|'],'DataFileDate','','SelectedFile',['<no file selected>']),'Options',struct('StatusSelecte"
+	  "d',1,'TimeSelected',1,'DeltaTimeSelected',1,'BytePortSelected',0,'MessageLengthSelected',0,'TriggerPort',struct('Se"
 	  "lected',0,'TriggerType',0),'UserCoding',struct('Selected',0,'InterfaceFile','UserDecodingFile','FcnName','UserDecod"
 	  "eFcn','InportSelected',0,'InportWidth',1,'OutportSelected',0,'OutportWidth',1),'EnablePortSelected',0,'SignalOnPort"
-	  "nameSelected',1,'UseRXService',1),'Message',struct('MsgOnBlocknameSelected',1,'MsgName','Exterior_Lighting_HS','Msg"
-	  "IdFormat',0,'MsgId',320,'MsgLength',3,'NumSignals',1,'SampleTime',-1,'Signal',struct('SgnName','BrkLtsAtv','SgnStar"
-	  "tBit',22,'SgnLength',1,'SgnType',0,'ModeValue',-1,'DataType',0,'ByteLayout',2,'Factor',1,'Offset',0,'SgnComment',{{"
-	  "''}},'SgnUnit','','Min',0,'Max',0,'SLDataType','SS_BOOLEAN'),'MsgIdNumFormat',0,'MsgComment',{{''}}),'Version',1.2,"
-	  "'general',struct('isFromLib',0)),'OFF',[]}},'GroupId',{{struct('Group',{{'RTICAN'}},'No',1,'Behavior',{{'NAMECHANGE"
-	  "'}},'BlockType',{{'SINK'}},'NameChangeFlag',0),'OFF',[]}},'SFcnRTICANMessage',{{struct('MsgType','RX','SFcnPortType"
-	  "','Scalar','MsgName','Exterior_Lighting_HS','MsgIdFormat','STD','MsgId',320,'MsgLength',3,'NumSignals',1,'SampleTim"
-	  "e',-1,'Signal',struct('SgnName','BrkLtsAtv','SgnStartBit',22,'SgnLength',1,'SgnType','standard','ModeValue',-1,'Dat"
-	  "aType',['unsigned int'],'ByteLayout',['motorola back.'],'Factor',1,'Offset',0,'SLDataType','SS_BOOLEAN'),'StatusSel"
-	  "ected','yes','TimeSelected','yes','DeltaTimeSelected','no','BytePortSelected','no','MessageLengthSelected','no','Tr"
-	  "iggerPort',struct('Selected','no','TriggerType',0),'UserCoding',struct('Selected','no','InterfaceFile','UserDecodin"
-	  "gFile','FcnName','UserDecodeFcn','InportSelected','no','InportWidth',1,'OutportSelected','no','OutportWidth',1),'En"
-	  "ablePortSelected','no','UseRXService','yes','BoardType','DS1','BoardNo',1,'ControllerNo',1),'OFF',[]}},'TLCFileName"
-	  "',{{'rtican_rx_message','OFF',[]}})"
+	  "nameSelected',1,'UseRXService',1),'Message',struct('MsgOnBlocknameSelected',1,'MsgName','Exterior_Lighting_HS_0x140"
+	  "','MsgIdFormat',0,'MsgId',320,'MsgLength',3,'NumSignals',11,'SampleTime',-1,'Signal',struct('SgnName',{'OtsdAmbtLtL"
+	  "vlStat','TrnSwAct','RrFogLmpsAct','HdlmpBmSelectStat','MainLghtSw','FrFogLmpsAct','LowBmAct','AutLghtCtrl','FlToPsS"
+	  "wAtv','BrkLtsAtv','HighBmAct'},'SgnStartBit',{0,2,8,8,11,16,17,20,21,22,23},'SgnLength',{2,2,1,2,2,1,1,1,1,1,1},'Sg"
+	  "nType',{0,0,0,0,0,0,0,0,0,0,0},'ModeValue',{-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},'DataType',{0,0,0,0,0,0,0,0,0,0,0},'B"
+	  "yteLayout',{2,2,2,2,2,2,2,2,2,2,2},'Factor',{1,1,1,1,1,1,1,1,1,1,1},'Offset',{0,0,0,0,0,0,0,0,0,0,0},'SgnComment',{"
+	  "{''},{''},{''},{''},{''},{''},{''},{''},{''},{''},{''}},'SgnUnit',{'','','','','','','','','','',''},'Min',{0,0,0,0"
+	  ",0,0,0,0,0,0,0},'Max',{255,255,255,255,255,255,255,255,255,255,255},'SLDataType',{'SS_DOUBLE','SS_DOUBLE','SS_DOUBL"
+	  "E','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE'}),'MsgIdNumForma"
+	  "t',1,'MsgComment',{{''}}),'Version',1.2,'general',struct('isFromLib',0)),'OFF',[]}},'GroupId',{{struct('Group',{{'R"
+	  "TICAN'}},'No',1,'Behavior',{{'NAMECHANGE'}},'BlockType',{{'SINK'}},'NameChangeFlag',0),'OFF',[]}},'SFcnRTICANMessag"
+	  "e',{{struct('MsgType','RX','SFcnPortType','Scalar','MsgName','Exterior_Lighting_HS_0x140','MsgIdFormat','STD','MsgI"
+	  "d',320,'MsgLength',3,'NumSignals',11,'SampleTime',-1,'Signal',struct('SgnName',{'OtsdAmbtLtLvlStat','TrnSwAct','RrF"
+	  "ogLmpsAct','HdlmpBmSelectStat','MainLghtSw','FrFogLmpsAct','LowBmAct','AutLghtCtrl','FlToPsSwAtv','BrkLtsAtv','High"
+	  "BmAct'},'SgnStartBit',{0,2,8,8,11,16,17,20,21,22,23},'SgnLength',{2,2,1,2,2,1,1,1,1,1,1},'SgnType',{'standard','sta"
+	  "ndard','standard','standard','standard','standard','standard','standard','standard','standard','standard'},'ModeVal"
+	  "ue',{-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},'DataType',{['unsigned int'],['unsigned int'],['unsigned int'],['unsigned in"
+	  "t'],['unsigned int'],['unsigned int'],['unsigned int'],['unsigned int'],['unsigned int'],['unsigned int'],['unsigne"
+	  "d int']},'ByteLayout',{['motorola back.'],['motorola back.'],['motorola back.'],['motorola back.'],['motorola back."
+	  "'],['motorola back.'],['motorola back.'],['motorola back.'],['motorola back.'],['motorola back.'],['motorola back.'"
+	  "]},'Factor',{1,1,1,1,1,1,1,1,1,1,1},'Offset',{0,0,0,0,0,0,0,0,0,0,0},'SLDataType',{'SS_DOUBLE','SS_DOUBLE','SS_DOUB"
+	  "LE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE','SS_DOUBLE'}),'StatusSelect"
+	  "ed','yes','TimeSelected','yes','DeltaTimeSelected','yes','BytePortSelected','no','MessageLengthSelected','no','Trig"
+	  "gerPort',struct('Selected','no','TriggerType',0),'UserCoding',struct('Selected','no','InterfaceFile','UserDecodingF"
+	  "ile','FcnName','UserDecodeFcn','InportSelected','no','InportWidth',1,'OutportSelected','no','OutportWidth',1),'Enab"
+	  "lePortSelected','no','UseRXService','yes','BoardType','DS1','BoardNo',1,'ControllerNo',1),'OFF',[]}},'TLCFileName',"
+	  "{{'rtican_rx_message','OFF',[]}})"
 	  RTISFcnParameters	  "struct('SFcnRTICANMessage','struct','TLCFileName','char')"
 	  RTIBlockParaDefault	  "struct('BoardTypeNo',4302,'BoardNo',1,'ChannelNo',1,'Parameters',struct('DataFileSupport',st"
 	  "ruct('DataFileSelectedMaster',0,'DataFileSelectedLocal',0,'DataFileName','','DataFileDate','','SelectedFile',['<no "
@@ -4131,19 +4194,73 @@ Library {
 	  "ggerType','rising'),'UseRXService','no','BoardType','DS4302','BoardNo',1,'ControllerNo',1,'SFcnPortType','Scalar'),"
 	  "'TLCFileName','rtican_rx_message')"
 	  Port {
-	    PortNumber		    1
-	    Name		    "BrkLtsAtv"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
 	    PortNumber		    2
-	    Name		    "status"
+	    Name		    "TrnSwAct"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	  Port {
 	    PortNumber		    3
+	    Name		    "RrFogLmpsAct"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "HdlmpBmSelectStat"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "MainLghtSw"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    Name		    "FrFogLmpsAct"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    Name		    "LowBmAct"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    Name		    "AutLghtCtrl"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    Name		    "FlToPsSwAtv"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    10
+	    Name		    "BrkLtsAtv"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    11
+	    Name		    "HighBmAct"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    12
+	    Name		    "status"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    13
 	    Name		    "Time"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
@@ -4157,7 +4274,7 @@ Library {
 	  Position		  [120, 567, 345, 858]
 	  ZOrder		  67
 	  AttributesFormatString  "Group Id: RTICAN1\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -4294,7 +4411,7 @@ Library {
 	  Position		  [20, 1090, 275, 1310]
 	  ZOrder		  63
 	  AttributesFormatString  "Group Id: RTICAN1\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -4454,7 +4571,7 @@ Library {
 	  Position		  [120, 1630, 375, 1800]
 	  ZOrder		  66
 	  AttributesFormatString  "Group Id: RTICAN1\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nReceive (RX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -4575,6 +4692,69 @@ Library {
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  SID			  "653"
+	  Position		  [445, 1850, 465, 1870]
+	  ZOrder		  81
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator10"
+	  SID			  "654"
+	  Position		  [445, 2100, 465, 2120]
+	  ZOrder		  90
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  SID			  "657"
+	  Position		  [445, 1900, 465, 1920]
+	  ZOrder		  82
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator3"
+	  SID			  "658"
+	  Position		  [390, 1925, 410, 1945]
+	  ZOrder		  83
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator4"
+	  SID			  "659"
+	  Position		  [445, 1950, 465, 1970]
+	  ZOrder		  84
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator5"
+	  SID			  "660"
+	  Position		  [390, 1975, 410, 1995]
+	  ZOrder		  85
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator6"
+	  SID			  "661"
+	  Position		  [445, 2000, 465, 2020]
+	  ZOrder		  86
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator7"
+	  SID			  "662"
+	  Position		  [390, 2025, 410, 2045]
+	  ZOrder		  87
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator8"
+	  SID			  "663"
+	  Position		  [445, 2050, 465, 2070]
+	  ZOrder		  88
 	}
 	Block {
 	  BlockType		  Outport
@@ -4699,31 +4879,21 @@ Library {
 	  DstPort		  4
 	}
 	Line {
-	  Name			  "BrkLtsAtv"
-	  ZOrder		  26
-	  Labels		  [0, 0]
-	  SrcBlock		  "Exterior_Lighting_HS"
-	  SrcPort		  1
-	  DstBlock		  "Bus\nCreator6"
-	  DstPort		  1
-	}
-	Line {
 	  Name			  "status"
-	  ZOrder		  27
-	  Labels		  [2, 1]
-	  SrcBlock		  "Exterior_Lighting_HS"
-	  SrcPort		  2
-	  Points		  [0, -5]
+	  ZOrder		  106
+	  Labels		  [-1, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  12
+	  Points		  [87, 0; 0, -44; 273, 0]
 	  DstBlock		  "Bus\nCreator6"
 	  DstPort		  2
 	}
 	Line {
 	  Name			  "Time"
-	  ZOrder		  28
-	  Labels		  [2, 1]
-	  SrcBlock		  "Exterior_Lighting_HS"
-	  SrcPort		  3
-	  Points		  [0, -10]
+	  ZOrder		  105
+	  Labels		  [-1, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  13
 	  DstBlock		  "Bus\nCreator6"
 	  DstPort		  3
 	}
@@ -4733,7 +4903,7 @@ Library {
 	  Labels		  [1, 1]
 	  SrcBlock		  "Bus\nCreator6"
 	  SrcPort		  1
-	  Points		  [458, 0; 0, -1395]
+	  Points		  [328, 0; 0, -1620]
 	  DstBlock		  "Bus\nCreator7"
 	  DstPort		  7
 	}
@@ -5167,7 +5337,7 @@ Library {
 	  Labels		  [1, 1]
 	  SrcBlock		  "Bus\nCreator8"
 	  SrcPort		  1
-	  Points		  [493, 0; 0, -1520]
+	  Points		  [558, 0; 0, -1795]
 	  DstBlock		  "Bus\nCreator7"
 	  DstPort		  8
 	}
@@ -5204,6 +5374,125 @@ Library {
 	  SrcPort		  2
 	  DstBlock		  "Bus\nCreator8"
 	  DstPort		  2
+	}
+	Line {
+	  Name			  "HighBmAct"
+	  ZOrder		  93
+	  Labels		  [0, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  11
+	  DstBlock		  "Terminator10"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "BrkLtsAtv"
+	  ZOrder		  107
+	  Labels		  [0, 0; 3, 1]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  10
+	  Points		  [49, 0; 0, 60]
+	  DstBlock		  "Data Type Conversion1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "RrFogLmpsAct"
+	  ZOrder		  95
+	  Labels		  [0, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  3
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "TrnSwAct"
+	  ZOrder		  96
+	  Labels		  [0, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  2
+	  Points		  [92, 0; 0, -44; 175, 0; 0, 44]
+	  DstBlock		  "Data Type Conversion"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "MainLghtSw"
+	  ZOrder		  97
+	  Labels		  [0, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  5
+	  Points		  [64, 0; 0, 56; 119, 0; 0, -56]
+	  DstBlock		  "Terminator4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "FrFogLmpsAct"
+	  ZOrder		  98
+	  Labels		  [0, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  6
+	  DstBlock		  "Terminator5"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "HdlmpBmSelectStat"
+	  ZOrder		  99
+	  Labels		  [0, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  4
+	  DstBlock		  "Terminator3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "AutLghtCtrl"
+	  ZOrder		  100
+	  Labels		  [0, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  8
+	  DstBlock		  "Terminator7"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "LowBmAct"
+	  ZOrder		  101
+	  Labels		  [0, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  7
+	  Points		  [30, 0; 0, -119; 234, 0; 0, 100; -73, 0; 0, 19]
+	  DstBlock		  "Terminator6"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "FlToPsSwAtv"
+	  ZOrder		  102
+	  Labels		  [0, 0]
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  9
+	  Points		  [64, 0; 0, 21; 119, 0; 0, -21]
+	  DstBlock		  "Terminator8"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  103
+	  SrcBlock		  "Data Type Conversion"
+	  SrcPort		  1
+	  DstBlock		  "Data Store\nWrite"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  108
+	  SrcBlock		  "Exterior_Lighting_HS_0x140"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "BrkLtsAtv"
+	  ZOrder		  173
+	  Labels		  [1, 1]
+	  SrcBlock		  "Data Type Conversion1"
+	  SrcPort		  1
+	  Points		  [98, 0; 0, -45]
+	  DstBlock		  "Bus\nCreator6"
+	  DstPort		  1
 	}
       }
     }
@@ -5346,7 +5635,7 @@ Library {
 	      Position		      [390, 111, 660, 369]
 	      ZOrder		      15
 	      AttributesFormatString  "Group Id: RTICAN2\\n"
-	      LibraryVersion	      "1.285"
+	      LibraryVersion	      "1.286"
 	      SourceBlock	      "rtican/RTICAN\nReceive (RX) "
 	      SourceType	      "RTI"
 	      ContentPreviewEnabled   off
@@ -5554,7 +5843,7 @@ Library {
 	      Position		      [20, 281, 290, 564]
 	      ZOrder		      16
 	      AttributesFormatString  "Group Id: RTICAN2\\n"
-	      LibraryVersion	      "1.285"
+	      LibraryVersion	      "1.286"
 	      SourceBlock	      "rtican/RTICAN\nReceive (RX) "
 	      SourceType	      "RTI"
 	      ContentPreviewEnabled   off
@@ -5723,7 +6012,7 @@ Library {
 	      Position		      [390, 476, 660, 769]
 	      ZOrder		      17
 	      AttributesFormatString  "Group Id: RTICAN2\\n"
-	      LibraryVersion	      "1.285"
+	      LibraryVersion	      "1.286"
 	      SourceBlock	      "rtican/RTICAN\nReceive (RX) "
 	      SourceType	      "RTI"
 	      ContentPreviewEnabled   off
@@ -5892,7 +6181,7 @@ Library {
 	      Position		      [20, 679, 290, 966]
 	      ZOrder		      18
 	      AttributesFormatString  "Group Id: RTICAN2\\n"
-	      LibraryVersion	      "1.285"
+	      LibraryVersion	      "1.286"
 	      SourceBlock	      "rtican/RTICAN\nReceive (RX) "
 	      SourceType	      "RTI"
 	      ContentPreviewEnabled   off
@@ -6061,7 +6350,7 @@ Library {
 	      Position		      [390, 874, 660, 1171]
 	      ZOrder		      19
 	      AttributesFormatString  "Group Id: RTICAN2\\n"
-	      LibraryVersion	      "1.285"
+	      LibraryVersion	      "1.286"
 	      SourceBlock	      "rtican/RTICAN\nReceive (RX) "
 	      SourceType	      "RTI"
 	      ContentPreviewEnabled   off
@@ -6989,7 +7278,7 @@ Library {
 	  Position		  [430, 372, 585, 443]
 	  ZOrder		  38
 	  NamePlacement		  "alternate"
-	  LibraryVersion	  "1.54"
+	  LibraryVersion	  "1.57"
 	  SourceBlock		  "topr5_adapter/Pinpoint RX Handler"
 	  SourceType		  "SubSystem"
 	  ContentPreviewEnabled	  off
@@ -7193,7 +7482,7 @@ Library {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"80"
-	SIDHighWatermark	"59"
+	SIDHighWatermark	"71"
 	Block {
 	  BlockType		  Reference
 	  Name			  "Can1Init"
@@ -7337,7 +7626,7 @@ Library {
 	  Position		  [130, 146, 375, 309]
 	  ZOrder		  1
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nTransmit (TX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -7624,7 +7913,7 @@ Library {
 	  Position		  [85, 64, 280, 176]
 	  ZOrder		  38
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nTransmit (TX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
@@ -7890,7 +8179,7 @@ Library {
 	  Position		  [130, 170, 375, 335]
 	  ZOrder		  1
 	  AttributesFormatString  "Group Id: RTICAN3\\n"
-	  LibraryVersion	  "1.285"
+	  LibraryVersion	  "1.286"
 	  SourceBlock		  "rtican/RTICAN\nTransmit (TX) "
 	  SourceType		  "RTI"
 	  ContentPreviewEnabled	  off
